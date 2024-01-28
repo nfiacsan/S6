@@ -1,4 +1,4 @@
-all: blur gamma_grey gamma_rgb gamma_rgb_multi histo gamma_curve histo_rgb profil test_couleur test_couleur_2 test_grey test_grey_2 test_grey_3 seuil_x interpolation interpolation_curve
+all: blur gamma_grey gamma_rgb gamma_rgb_multi histo gamma_curve histo_rgb profil test_couleur test_grey test_grey_2 test_grey_3 seuil_x interpolation interpolation_curve
 
 blur: blur.cpp
 	g++ blur.cpp -o blur
@@ -27,8 +27,6 @@ profil: profil.cpp
 test_couleur: test_couleur.cpp
 	g++ test_couleur.cpp -o test_couleur
 
-test_couleur_2: test_couleur_2.cpp
-	g++ test_couleur_2.cpp -o test_couleur_2
 
 test_grey: test_grey.cpp
 	g++ test_grey.cpp -o test_grey
