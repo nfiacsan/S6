@@ -7,12 +7,6 @@
 #include "image_ppm.h"
 #include <stdio.h>
 
-int interpolation(int value, int S1, int S2) {
-  // return (value - S1) * 255 / (S2 - S1);
-  double t = (double)(value - S1) / (S2 - S1);
-  return (int)(0.5 * (1 + sin((t - 0.5) * M_PI)) * 255);
-}
-
 int main(int argc, char *argv[]) {
   char cNomImgLue[250], cNomImgEcrite[250];
   int nH, nW, nTaille, S1, S2;
@@ -40,8 +34,7 @@ int main(int argc, char *argv[]) {
     if (ImgIn[i] < S1)
       ImgOut[i] = 0;
     else if (ImgIn[i] < S2) {
-      ImgOut[i] = interpolation(ImgIn[i], S1, S2);
-      printf("%d %d\n", ImgIn[i], interpolation(ImgIn[i], S1, S2));
+      ImgOut[i] = interpolation_lin(ImgIn[i], S1, S2);
     } else
       ImgOut[i] = 255;
   }

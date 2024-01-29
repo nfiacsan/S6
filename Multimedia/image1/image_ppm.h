@@ -180,3 +180,29 @@ void lire_image_pgm(char nom_image[], OCTET *pt_image, int taille_image) {
  * @return le pixel corrigé
  */
 int apply_gamma(float x, float gamma) { return 255 * pow(x / 255, gamma); }
+
+/**
+ * @brief Renvoie la valeur interpolée entre S1 et S2 par une fonction linéaire
+ *
+ * @param value la valeur à interpoler
+ * @param S1 le premier seuil
+ * @param S2 le second seuil
+ * @return
+ */
+int interpolation_lin(int value, int S1, int S2) {
+  return (value - S1) * 255 / (S2 - S1);
+}
+
+/**
+ * @brief Renvoie la valeur interpolée entre S1 et S2 par une fonction
+ * sinusoïdale
+ *
+ * @param value la valeur à interpoler
+ * @param S1 le premier seuil
+ * @param S2 le second seuil
+ * @return
+ */
+int interpolation_sin(int value, int S1, int S2) {
+  double t = (double)(value - S1) / (S2 - S1);
+  return (int)(0.5 * (1 + sin((t - 0.5) * M_PI)) * 255);
+}
