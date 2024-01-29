@@ -15,7 +15,7 @@ gamma_rgb_multi: gamma_rgb_multi.cpp
 histo: histo.cpp
 	g++ histo.cpp -o histo
 
-gamma_curve: histo_gamma.cpp
+gamma_curve: gamma_curve.cpp
 	g++ gamma_curve.cpp -o gamma_curve
 
 histo_rgb: histo_rgb.cpp

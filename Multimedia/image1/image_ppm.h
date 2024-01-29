@@ -171,3 +171,12 @@ void lire_image_pgm(char nom_image[], OCTET *pt_image, int taille_image) {
     fclose(f_image);
   }
 }
+
+/**
+ * @brief Applique la formule de correction gamma à un pixel
+ *
+ * @param x la valeur du pixel
+ * @param gamma  la valeur du gamma
+ * @return le pixel corrigé
+ */
+int apply_gamma(float x, float gamma) { return 255 * pow(x / 255, gamma); }

@@ -6,8 +6,6 @@
 #include "image_ppm.h"
 #include <stdio.h>
 
-float apply_gamma(float x, float gamma) { return 255 * pow(x / 255, gamma); }
-
 int main(int argc, char *argv[]) {
   char cNomImgLue[250], cNomImgEcrite[250];
   int nH, nW, nTaille;
