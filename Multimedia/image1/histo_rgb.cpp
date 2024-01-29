@@ -1,8 +1,11 @@
+/**
+ * @file histo_rgb.cpp
+ * @brief Réalise l'histogramme d'une image couleur
+ */
+
 // plot "histo_rgb.dat" u 1:2 lt rgb "red" title "rouge" with lines, "" u 1:3 lt
 // rgb "green" title "vert" with lines, "" u 1:4 lt rgb "blue" title "bleu" with
 // lines
-
-// histo_rgb.cpp: Réalise l'histogramme d'une image couleur
 
 #include "image_ppm.h"
 #include <cstdio>

@@ -1,5 +1,8 @@
-// interpolation.cpp : Seuille une image en niveau de gris en 3 parties avec une
-// interpolation linéaire
+/**
+ * @file interpolation.cpp
+ * @brief Seuille une image en niveau de gris en 3 parties avec une
+ * interpolation linéaire ou sinusoïdale
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

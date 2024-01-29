@@ -1,5 +1,7 @@
-// test_couleur.cpp : Seuille une image couleur avec des seuils pour chaque
-// composante
+/**
+ * @file test_couleur.cpp
+ * @brief Seuille une image couleur avec des seuils pour chaque composante
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

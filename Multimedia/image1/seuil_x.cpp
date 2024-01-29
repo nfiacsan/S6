@@ -1,4 +1,7 @@
-// test_couleur.cpp : Seuille une image en niveau de gris en x parties
+/**
+ * @file test_couleur.cpp
+ * @brief Seuille une image en niveau de gris en x parties
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

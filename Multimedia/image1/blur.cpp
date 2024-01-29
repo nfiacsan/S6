@@ -1,4 +1,7 @@
-// blur.cpp : Floute une image en niveau de gris
+/**
+ * @file blur.cpp
+ * @brief Floute une image en niveau de gris
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

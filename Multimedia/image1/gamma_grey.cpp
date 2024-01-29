@@ -1,4 +1,7 @@
-// gamma.cpp : Applique une correction gamma à une image
+/**
+ * @file gamma_grey.cpp
+ * @brief Applique une correction gamma à une image
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

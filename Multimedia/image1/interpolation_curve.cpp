@@ -1,4 +1,7 @@
-// interpolation_curve.cpp: Visualise la courbe d'interpolation
+/**
+ * @file interpolation_curve.cpp
+ * @brief Visualise la courbe d'interpolation
+ */
 
 #include "image_ppm.h"
 #include <math.h>

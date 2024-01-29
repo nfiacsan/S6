@@ -1,4 +1,7 @@
-// histo.cpp: Realise l'histogramme d'une image
+/**
+ * @file histo.cpp
+ * @brief Realise l'histogramme d'une image
+ */
 
 #include "image_ppm.h"
 #include <cstdio>

@@ -1,4 +1,7 @@
-// profil.cpp : Histogramme d'une ligne ou d'une colonne d'une image
+/**
+ * @file profil.cpp
+ * @brief Histogramme d'une ligne ou d'une colonne d'une image
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>

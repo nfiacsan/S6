@@ -1,4 +1,7 @@
-// test_grey.cpp : Seuille une image en niveau de gris
+/**
+ * @file test_grey.cpp
+ * @brief Seuille une image en niveau de gris
+ */
 
 #include "image_ppm.h"
 #include <stdio.h>
