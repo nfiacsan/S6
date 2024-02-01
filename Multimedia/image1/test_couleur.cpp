@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
   int nH, nW, nTaille, nR, nG, nB, SR, SG, SB;
 
   if (argc != 6) {
-    printf("Usage: ImageIn.ppm ImageOut.ppm Seuil \n");
+    printf("Usage: ImageIn.ppm ImageOut.ppm SR SG SB \n");
     exit(1);
   }
 
